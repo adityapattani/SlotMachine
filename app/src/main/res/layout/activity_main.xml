@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aditya.slotmachine.MainActivity"
+    android:background="#ecf0f1">
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/opt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playBtn"
+        android:layout_marginTop="91dp"
+        android:layout_toStartOf="@+id/playBtn"
+        android:text="Option 1"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/opt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/opt1"
+        android:layout_centerHorizontal="true"
+        android:text="Option 2"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/opt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/opt2"
+        android:layout_alignBottom="@+id/opt2"
+        android:layout_toEndOf="@+id/opt2"
+        android:text="Option 3"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imgleft"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_above="@+id/playBtn"
+        android:layout_toStartOf="@+id/playBtn"
+        android:layout_marginBottom="64dp" />
+
+    <ImageView
+        android:id="@+id/imgright"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/imgcent"
+        android:layout_toEndOf="@+id/imgcent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/imgcent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/imgleft"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/ic_launcher" />
+</RelativeLayout>
